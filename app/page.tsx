@@ -69,7 +69,7 @@ export default function HomePage() {
             {/* RIGHT SIDE IMAGE */}
             <div className="relative h-96 w-full rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/hero.png"
+                src="/hero.jpg"
                 alt="Hero"
                 fill
                 className="object-cover"

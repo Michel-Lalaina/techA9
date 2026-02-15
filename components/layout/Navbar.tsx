@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link"
 import { AppBar, Toolbar, IconButton, Button } from "@mui/material"
@@ -16,7 +16,7 @@ export default function Navbar() {
       <Toolbar className="max-w-7xl mx-auto w-full flex justify-between">
 
         {/* LOGO */}
-        <Link href="/" className="text-2xl font-bold text-green-600">
+        <Link href="/" className="text-2xl font-bold hover:text-white">
           OALID
         </Link>
 
@@ -25,13 +25,13 @@ export default function Navbar() {
           <Link href="/" className="hover:text-green-600 transition">
             Home
           </Link>
-          <Link href="/products" className="hover:text-green-600 transition">
+          <Link href="/products" className="hover:text-white transition">
             Shop
           </Link>
-          <Link href="#" className="hover:text-green-600 transition">
+          <Link href="#" className="hover:text-white transition">
             Categories
           </Link>
-          <Link href="#" className="hover:text-green-600 transition">
+          <Link href="#" className="hover:text-white transition">
             Contact
           </Link>
         </div>
