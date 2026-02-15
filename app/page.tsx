@@ -15,14 +15,16 @@ const products = [
     name: "Minimal Watch",
     description: "Elegant minimal design watch.",
     price: 250,
-    image: "/products/watch.jpg"
+    image: "/products/watch.jpg",
+    badge: "NEW"
   },
   {
     id: "3",
     name: "Leather Backpack",
     description: "Premium genuine leather backpack.",
     price: 180,
-    image: "/products/bag.jpg"
+    image: "/products/bag.jpg",
+    badge: "NEW"
   }
 ]
 
@@ -30,13 +32,13 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <div className="bg-white">
-        <Container maxWidth="lg" className="py-20">
-          <div className="grid md:grid-cols-2 items-center gap-12">
+      <div className="bg-gradient-to-r from-white to-green-50 overflow-hidden">
+        <Container maxWidth="lg" className="py-24">
+          <div className="grid md:grid-cols-2 items-center gap-16">
 
-            {/* LEFT SIDE */}
-            <div>
-              <p className="text-green-600 font-semibold tracking-wider mb-4">
+            {/* LEFT */}
+            <div className="animate-fadeInUp">
+              <p className="text-green-600 font-semibold tracking-widest mb-4">
                 PREMIUM COLLECTION
               </p>
 
@@ -59,17 +61,17 @@ export default function HomePage() {
                 <Button
                   variant="contained"
                   size="large"
-                  className="px-8 py-3"
+                  className="px-8 py-3 shadow-lg"
                 >
                   Shop Now
                 </Button>
               </Link>
             </div>
 
-            {/* RIGHT SIDE IMAGE */}
-            <div className="relative h-96 w-full rounded-3xl overflow-hidden shadow-2xl">
+            {/* RIGHT */}
+            <div className="relative h-[420px] w-full rounded-3xl overflow-hidden shadow-2xl hover:scale-105 transition duration-700">
               <Image
-                src="/hero.jpg"
+                src="/hero.png"
                 alt="Hero"
                 fill
                 className="object-cover"
@@ -79,6 +81,7 @@ export default function HomePage() {
           </div>
         </Container>
       </div>
+
 
 
       {/* PRODUCTS */}
@@ -97,14 +100,35 @@ export default function HomePage() {
               className="rounded-3xl overflow-hidden hover:shadow-2xl transition duration-300 border border-gray-100"
             >
               <Link href={`/products/${product.id}`}>
-                <div className="relative h-72 w-full">
+                <div className="relative h-80 w-full group overflow-hidden">
+
+                  {product.badge && (
+                    <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full z-20 shadow-lg">
+                      {product.badge}
+                    </div>
+                  )}
+
                   <Image
                     src={product.image}
                     alt={product.name}
                     fill
-                    className="object-cover hover:scale-105 transition duration-500"
+                    className="object-cover transition duration-700 group-hover:scale-110"
                   />
+
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-500" />
+
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                    <Button
+                      variant="contained"
+                      size="small"
+                      className="shadow-xl"
+                    >
+                      Quick View
+                    </Button>
+                  </div>
+
                 </div>
+
               </Link>
 
               <CardContent className="p-6">

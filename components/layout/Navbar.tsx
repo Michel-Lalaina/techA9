@@ -5,6 +5,9 @@ import { AppBar, Toolbar, IconButton, Button } from "@mui/material"
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline"
 import SearchIcon from "@mui/icons-material/Search"
+import Badge from "@mui/material/Badge"
+import { useCart } from "@/context/CartContext"
+
 
 export default function Navbar() {
   return (

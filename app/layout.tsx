@@ -4,6 +4,10 @@ import "./globals.css"
 import MuiProvider from "@/components/providers/ThemeProvider"
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
+import { CartProvider } from "@/context/CartContext"
+
+
+
 
 export const metadata = {
   title: "TECHA9",
@@ -20,7 +24,9 @@ export default function RootLayout({
       <body>
         <MuiProvider>
           <Navbar />
-          {children}
+          <CartProvider>
+            {children}
+          </CartProvider>
           <Footer />
         </MuiProvider>
       </body>
