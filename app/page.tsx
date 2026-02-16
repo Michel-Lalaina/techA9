@@ -54,15 +54,15 @@ export default function HomePage() {
                 variant="h3"
                 className="font-bold mb-6 leading-tight"
               >
-                Elevate Your <span className="text-green-600">Style</span> <br />
-                Everyday Confidence
+                Moins de pannes <span className="text-green-600">Style</span> <br />
+                Plus de performance
               </Typography>
 
               <Typography
                 variant="body1"
-                className="mb-8 text-gray-600 max-w-md"
+                className="mb-8 text-gray-600 max-w-md font-bold"
               >
-                Discover exclusive products crafted for modern lifestyle and timeless elegance.
+                A9 Protège ce qui fait tourner votre véhicules.
               </Typography>
 
               <Link href="/products">

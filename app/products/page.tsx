@@ -6,10 +6,10 @@ import { Container, Typography, Card, CardContent, Button } from "@mui/material"
 
 const products = [
   { id: "1", name: "Premium Sneakers", description: "Ultra comfortable modern sneakers.", price: 120, image: "/products/shoes.jpg", badge: "NEW" },
-  { id: "2", name: "Premium Alt", description: "Ultra comfortable modern Alt.", price: 120, image: "/products/alt.jpg", badge: "NEW" },
+  { id: "2", name: "Premium Alt", description: "Ultra comfortable modern Alt.", price: 120, image: "/products/alt.png", badge: "NEW" },
   { id: "3", name: "Minimal Watch", description: "Elegant minimal design watch.", price: 250, image: "/products/watch.jpg", badge: "NEW" },
   { id: "4", name: "Leather Backpack", description: "Premium genuine leather backpack.", price: 180, image: "/products/bag.jpg", badge: "NEW" },
-  { id: "5", name: "Leather Build", description: "Premium Build leather backpack.", price: 180, image: "/products/build.jpg", badge: "NEW" },
+  { id: "5", name: "Leather Build", description: "Premium Build leather backpack.", price: 180, image: "/products/build.png", badge: "NEW" },
   { id: "6", name: "Leather Bing", description: "Premium Bing leather backpack.", price: 180, image: "/products/bing.jpg",badge: "NEW" }
 ]
 

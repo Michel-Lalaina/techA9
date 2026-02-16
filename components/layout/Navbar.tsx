@@ -20,12 +20,12 @@ export default function Navbar() {
 
         {/* LOGO */}
         <Link href="/" className="text-2xl font-bold hover:text-white">
-          OALID
+          TECH A9
         </Link>
 
         {/* CENTER MENU */}
-        <div className="hidden md:flex gap-8 text-gray-700 font-medium">
-          <Link href="/" className="hover:text-green-600 transition">
+        <div className="hidden md:flex gap-8 text-gray-700 font-bold">
+          <Link href="/" className="hover:text-white transition">
             Home
           </Link>
           <Link href="/products" className="hover:text-white transition">
@@ -43,15 +43,15 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
 
           <IconButton>
-            <SearchIcon />
+            <SearchIcon className="hover:text-white transition" />
           </IconButton>
 
           <IconButton>
-            <ShoppingCartIcon />
+            <ShoppingCartIcon className="hover:text-white transition" />
           </IconButton>
 
           <IconButton>
-            <PersonOutlineIcon />
+            <PersonOutlineIcon className="hover:text-white transition" />
           </IconButton>
 
           <Button
